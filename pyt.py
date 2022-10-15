@@ -95,7 +95,7 @@ def test_model(model, device, test_loader):
             correct += pred.eq(target.view_as(pred)).sum().item()
         test_loss /= len(test_loader.dataset)
         print('Test__Average loss:{:.4f}, Accuracy:{:.3f}\n'.format(
-            test_loss,1 00.0*correct / len(test_loader.dataset)
+            test_loss, 100.0*correct / len(test_loader.dataset)
         ))
 
 
