@@ -95,11 +95,11 @@ def test_model(model, device, test_loader):
             correct += pred.eq(target.view_as(pred)).sum().item()
         test_loss /= len(test_loader.dataset)
         print('Test__Average loss:{:.4f}, Accuracy:{:.3f}\n'.format(
-            test_loss,100.0*correct / len(test_loader.dataset)
+            test_loss,1 00.0*correct / len(test_loader.dataset)
         ))
 
 
 # 9调用方法78
-for epoch in range(1,EPOCHS+1):
-    train_model(model,DEVICE,train_loader,optimizer,epoch)
-    test_model(model,DEVICE,test_loader)
+for epoch in range(1, EPOCHS+1):
+    train_model(model, DEVICE, train_loader, optimizer, epoch)
+    test_model(model, DEVICE, test_loader)
